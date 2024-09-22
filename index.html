@@ -6,20 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- 'Noto Serif JP -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"
-      rel="stylesheet"
-    />
+
     <title>cosme</title>
   </head>
 
@@ -46,38 +39,39 @@
     </header>
 
     <main id="main">
-      <!-- メインの写真 -->
-      <div class="main-pic">
-        <div class="introduction">
+      <section class="first-view">
+        <div class="first-view__thumb-hero">
           <picture>
-            <source media="(max-width: 768px)" srcset="./images/KV-sp.png" />
+            <source media="(max-width: 767px)" srcset="./images/KV-sp.png" />
             <img
               src="./images/KV.png"
-              alt="化粧品の紹介写真メイン"
+              alt="鏡を見ている女性"
               width="1440"
               height="668"
               decoding="async"
             />
           </picture>
         </div>
-
-        <picture class="skin-lotion">
-          <source
-            media="(max-width: 768px)"
-            srcset="./images/skin-lotion-sp.png"
-          />
-          <img
-            src="./images/skin-lotion.png"
-            alt="化粧品その１"
-            width="117"
-            height="385"
-            decoding="async"
-          />
-        </picture>
-
-        <a href="https://line.me/ja/">
-          <picture class="line">
-            <source media="(max-width: 768px)" srcset="./images/line-sp.png" />
+        <!-- /.first-view__wrap -->
+        <div class="first-view__thumb-lotion">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/skin-lotion-sp.png"
+            />
+            <img
+              src="./images/skin-lotion.png"
+              alt="化粧品その１"
+              width="117"
+              height="385"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <!-- /.first-view__thumb-lotion -->
+        <a class="first-view__link-line" href="https://line.me/ja/">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./images/line-sp.png" />
             <img
               src="./images/line.png"
               alt="LINEへ誘導"
@@ -87,233 +81,280 @@
             />
           </picture>
         </a>
+        <p class="first-view__text-slogan">
+          キャッチコピーが入ります<br />キャッチコピーが入ります
+        </p>
+        <p class="first-view__text-goods">商品名○○○○</p>
+        <p class="first-view__text-jpy">
+          4,950<span class="first-view__text-unit">円</span
+          ><span class="first-view__text-tax">（税込）</span>
+        </p>
+      </section>
 
-        <div class="merchandise">
-          <p>キャッチコピーが入りますキャッチコピーが入ります</p>
-          <p>商品名○○○○</p>
+      <section class="worries">
+        <div class="common__inner">
+          <h2 class="level2-heading">
+            こんな<span class="common__text--fontSize-big">お悩み</span>は<span
+              class="common__text--fontSize-big"
+              >ございませんか？</span
+            >
+          </h2>
+          <div class="worries__wrap">
+            <div class="worries__box">
+              <div class="worries__pic">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/Frame1-sp.png"
+                  />
+                  <img
+                    src="./images/Frame1.png"
+                    alt="点の画像その１"
+                    width="65"
+                    height="42"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <!-- /.worries__pic-->
+              <p class="worries__text-voice">
+                テキストテキストテキストテキストテキストテキスト
+              </p>
+              <div class="worries__pic">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/Frame2-sp.png"
+                  />
+                  <img
+                    src="./images/Frame2.png"
+                    alt="点の画像その２"
+                    width="65"
+                    height="42"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <!-- /.worries__pic-->
+            </div>
+            <!-- /.worries__box -->
+
+            <div class="worries__box">
+              <div class="worries__pic">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/Frame1-sp.png"
+                  />
+                  <img
+                    src="./images/Frame1.png"
+                    alt="点の画像その１"
+                    width="65"
+                    height="42"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <!-- /.worries__pic"-->
+              <p class="worries__text-voice">
+                テキストテキストテキストテキストテキストテキスト
+              </p>
+              <div class="worries__pic">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/Frame2-sp.png"
+                  />
+                  <img
+                    src="./images/Frame2.png"
+                    alt="点の画像その２"
+                    width="65"
+                    height="42"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <!-- /.worries__pic"-->
+            </div>
+            <!-- /.worries__box -->
+
+            <div class="worries__box">
+              <div class="worries__pic">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/Frame1-sp.png"
+                  />
+                  <img
+                    src="./images/Frame1.png"
+                    alt="点の画像その１"
+                    width="65"
+                    height="42"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <!-- /.worries__pic -->
+              <p class="worries__text-voice">
+                テキストテキストテキストテキストテキストテキスト
+              </p>
+              <div class="worries__pic">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/Frame2-sp.png"
+                  />
+                  <img
+                    src="./images/Frame2.png"
+                    alt="点の画像その２"
+                    width="65"
+                    height="42"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <!-- /.worries__pic -->
+            </div>
+            <!-- /.worries__box -->
+
+            <div class="worries__box">
+              <div class="worries__pic">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/Frame1-sp.png"
+                  />
+                  <img
+                    src="./images/Frame1.png"
+                    alt="点の画像その１"
+                    width="65"
+                    height="42"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <!-- /.worries__pic -->
+              <p class="worries__text-voice">
+                テキストテキストテキストテキストテキストテキスト
+              </p>
+              <div class="worries__pic">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/Frame2-sp.png"
+                  />
+                  <img
+                    src="./images/Frame2.png"
+                    alt="点の画像その２"
+                    width="65"
+                    height="42"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <!-- /.worries__pic -->
+            </div>
+            <!-- /.worries__box -->
+
+            <div class="worries__box">
+              <div class="worries__pic">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/Frame1-sp.png"
+                  />
+                  <img
+                    src="./images/Frame1.png"
+                    alt="点の画像その１"
+                    width="65"
+                    height="42"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <!-- /.worries__pic -->
+              <p class="worries__text-voice">
+                テキストテキストテキストテキストテキストテキスト
+              </p>
+              <div class="worries__pic">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/Frame2-sp.png"
+                  />
+                  <img
+                    src="./images/Frame2.png"
+                    alt="点の画像その２"
+                    width="65"
+                    height="42"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <!-- /.worries__pic -->
+            </div>
+            <!-- worries__box -->
+          </div>
+          <!-- /.worries__wrap -->
         </div>
-        <div class="jpy">
-          <p>4,950<span>円</span></p>
-          <p>（税込）</p>
-        </div>
-      </div>
-
-      <!-- 悩み -->
-      <section id="worries">
-        <div class="title">
-          <h2>こんな<span>お悩み</span>は<span>ございませんか？</span></h2>
-        </div>
-
-        <div class="introduction">
-          <div class="box">
-            <div class="container">
-              <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/Frame1-sp.png"
-                />
-                <img
-                  src="./images/Frame1.png"
-                  alt="点の画像その１"
-                  width="65"
-                  height="42"
-                  decoding="async"
-                />
-              </picture>
-              <p>テキストテキストテキスト テキストテキストテキスト</p>
-              <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/Frame2-sp.png"
-                />
-                <img
-                  src="./images/Frame2.png"
-                  alt="点の画像その２"
-                  width="65"
-                  height="42"
-                  decoding="async"
-                />
-              </picture>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="container">
-              <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/Frame1-sp.png"
-                />
-                <img
-                  src="./images/Frame1.png"
-                  alt="点の画像その１"
-                  width="65"
-                  height="42"
-                  decoding="async"
-                />
-              </picture>
-              <p>テキストテキストテキスト テキストテキストテキスト</p>
-              <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/Frame2-sp.png"
-                />
-                <img
-                  src="./images/Frame2.png"
-                  alt="点の画像その２"
-                  width="65"
-                  height="42"
-                  decoding="async"
-                />
-              </picture>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="container">
-              <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/Frame1-sp.png"
-                />
-                <img
-                  src="./images/Frame1.png"
-                  alt="点の画像その１"
-                  width="65"
-                  height="42"
-                  decoding="async"
-                />
-              </picture>
-              <p>テキストテキストテキスト テキストテキストテキスト</p>
-              <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/Frame2-sp.png"
-                />
-                <img
-                  src="./images/Frame2.png"
-                  alt="点の画像その２"
-                  width="65"
-                  height="42"
-                  decoding="async"
-                />
-              </picture>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="container">
-              <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/Frame1-sp.png"
-                />
-                <img
-                  src="./images/Frame1.png"
-                  alt="点の画像その１"
-                  width="65"
-                  height="42"
-                  decoding="async"
-                />
-              </picture>
-              <p>テキストテキストテキスト テキストテキストテキスト</p>
-              <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/Frame2-sp.png"
-                />
-                <img
-                  src="./images/Frame2.png"
-                  alt="点の画像その２"
-                  width="65"
-                  height="42"
-                  decoding="async"
-                />
-              </picture>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="container">
-              <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/Frame1-sp.png"
-                />
-                <img
-                  src="./images/Frame1.png"
-                  alt="点の画像その１"
-                  width="65"
-                  height="42"
-                  decoding="async"
-                />
-              </picture>
-              <p>テキストテキストテキスト テキストテキストテキスト</p>
-              <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="./images/Frame2-sp.png"
-                />
-                <img
-                  src="./images/Frame2.png"
-                  alt="点の画像その２"
-                  width="65"
-                  height="42"
-                  decoding="async"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
+        <!-- /.common__inner -->
       </section>
 
       <!-- 選ばれる理由 -->
-      <section id="select">
-        <div class="title">
-          <h2>○○が<span>選ばれる</span>理由</h2>
-        </div>
-
-        <div class="skin-lotion">
-          <div class="skin-pic">
-            <picture>
-              <source
-                media="(max-width: 768px)"
-                srcset="./images/skin-lotion2-sp.png"
-              />
-              <img
-                src="./images/skin-lotion2.png"
-                alt="化粧品その２"
-                width="243"
-                height="802"
-                decoding="async"
-              />
-            </picture>
+      <section class="select">
+        <div class="common__inner">
+          <h2 class="level2-heading">
+            ○○が<span class="common__text--fontSize-big">選ばれる</span>理由
+          </h2>
+          <div class="select__container">
+            <div class="select__thumb-lotion">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/skin-lotion2-sp.png"
+                />
+                <img
+                  src="./images/skin-lotion2.png"
+                  alt="化粧品その２"
+                  width="243"
+                  height="802"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <!-- /.select__thumb-lotion -->
+            <!-- <div class="reason"> -->
+            <div class="select__wrap">
+              <div class="select__box">
+                <h3 class="select__counter"></h3>
+                <div>
+                  <p class="select__text">テキストテキストテキスト</p>
+                  <p>テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+              </div>
+              <!-- /.select__box -->
+              <div class="select__box">
+                <h3 class="select__counter"></h3>
+                <div>
+                  <p>テキストテキストテキスト</p>
+                  <p>テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+              </div>
+              <!-- /.select__box -->
+              <div class="select__box">
+                <h3 class="select__counter"></h3>
+                <div>
+                  <p>テキストテキストテキスト</p>
+                  <p>テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+              </div>
+              <!-- /.select__box -->
+            </div>
+            <!-- /.select__wrap -->
           </div>
-
-          <div class="reason">
-            <div class="container">
-              <h3></h3>
-              <div class="text">
-                <p>テキストテキストテキスト</p>
-                <p>テキストテキストテキストテキストテキストテキスト</p>
-              </div>
-            </div>
-            <div class="container">
-              <h3></h3>
-              <div class="text">
-                <p>テキストテキストテキスト</p>
-                <p>テキストテキストテキストテキストテキストテキスト</p>
-              </div>
-            </div>
-            <div class="container">
-              <h3></h3>
-              <div class="text">
-                <p>テキストテキストテキスト</p>
-                <p>テキストテキストテキストテキストテキストテキスト</p>
-              </div>
-            </div>
-          </div>
+          <!-- /.select__container -->
         </div>
+        <!-- /.common__inner -->
       </section>
 
       <!-- 特徴 -->
@@ -326,7 +367,7 @@
           <div class="container">
             <picture>
               <source
-                media="(max-width: 768px)"
+                media="(max-width: 767px)"
                 srcset="./images/skin-lotion3-sp.png"
               />
               <img
@@ -347,7 +388,7 @@
           <div class="container">
             <picture>
               <source
-                media="(max-width: 768px)"
+                media="(max-width: 767px)"
                 srcset="./images/skin-lotion3-sp.png"
               />
               <img
@@ -368,7 +409,7 @@
           <div class="container">
             <picture>
               <source
-                media="(max-width: 768px)"
+                media="(max-width: 767px)"
                 srcset="./images/skin-lotion3-sp.png"
               />
               <img
@@ -394,7 +435,7 @@
         <div class="container">
           <picture>
             <source
-              media="(max-width: 768px)"
+              media="(max-width: 767px)"
               srcset="./images/skin-lotion4-sp.png"
             />
             <img
@@ -428,7 +469,7 @@
       <section id="voice">
         <div class="joy">
           <picture>
-            <source media="(max-width: 768px)" srcset="./images/voice-sp.png" />
+            <source media="(max-width: 767px)" srcset="./images/voice-sp.png" />
             <img
               src="./images/voice.png"
               alt="喜びの声背景"
@@ -444,7 +485,7 @@
             <div class="item">
               <picture>
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 767px)"
                   srcset="./images/woman-sp.png"
                 />
                 <img
@@ -472,7 +513,7 @@
             <div class="item">
               <picture>
                 <source
-                  media="(max-width: 768px)"
+                  media="(max-width: 767px)"
                   srcset="./images/woman-sp.png"
                 />
                 <img
