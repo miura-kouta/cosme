@@ -12,25 +12,30 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="icon" href="./images/favicon.jpg">
     <title>cosme</title>
   </head>
 
   <body>
     <header class="header">
       <div class="header__inner">
-        <h1 class="header__logo">ロゴ</h1>
+        <a class="header__link-logo" href="#">
+          <h1 class="header__title-logo">
+            <img src="./images/logo.png" alt="ロゴ" class="header__logo__img" width="140" height="55" decoding="async">
+          </h1>
+
+        </a>
 
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link" href="#company">会社概要</a>
+              <a class="header__link" href="#">会社概要</a>
             </li>
             <li class="header__item">
               <a class="header__link" href="https://line.me/ja/">公式LINE</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#order">製品のご注文</a>
+              <a class="header__link" href="#">製品のご注文</a>
             </li>
           </ul>
         </nav>
@@ -466,10 +471,9 @@
             </div>
             <div class="application__body">
               <p class="application__text-effect">
-                キャッチコピーや送料無料返金オプションなどあれば記載する。
-                キャッチコピーや送料無料返金オプションなどあれば記載する。キャッチコピーや送料無料返金オプションなどあれば記載する。
+                美白成分が配合されており、日々のスキンケアで肌の透明感を引き出します。メラニンの生成を抑え、シミやそばかすの原因にアプローチ。保湿成分もたっぷり含まれているため、しっとりとした使い心地で、乾燥からも肌を守ります。毎日のケアに取り入れることで、明るく均一な肌トーンを目指し、シミの目立たない美しい肌へ導きます。
               </p>
-              <p class="application__text-effect">あなたのシミにアプローチ</p>
+              <p class="application__text-stain">あなたのシミにアプローチ</p>
               <p class="application__text-product">商品名○○○○</p>
               <p class="application__text-jpy">
                 4,950<span class="application__text-unit">円（税込）</span>
@@ -517,14 +521,14 @@
                 テキストテキストテキストテキストテキストテキストテキスト
               </h3>
               <p class="voice__text-sentence">
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
             </div>
             <!-- /.voice__body -->
           </div>
           <!-- /.voice__media -->
-          <div class="container">
-            <div class="item">
+          <div class="voice__media">
+            <div class="voice__thumb">
               <picture>
                 <source
                   media="(max-width: 767px)"
@@ -538,102 +542,202 @@
                   decoding="async"
                 />
               </picture>
-              <h2>Y・Aさん　30代<span>・東京都</span></h2>
+              <p class="voice__text-profile">
+                Y・Aさん　30代<span>・東京都</span>
+              </p>
             </div>
+            <!-- /.voice__thumb -->
 
-            <div class="text">
-              <p>テキストテキストテキストテキストテキストテキストテキスト</p>
-              <p>
+            <div class="voice__body">
+              <h3 class="voice__title level3-heading">
+                テキストテキストテキストテキストテキストテキストテキスト
+              </h3>
+              <p class="voice__text-sentence">
                 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ
               </p>
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ
-              </p>
             </div>
+            <!-- /.voice__body -->
           </div>
+          <!-- /.voice__media -->
         </div>
         <!-- /.common__inner -->
       </section>
 
-      <!-- 問い合わせ -->
-      <section id="inquiry">
-        <div class="container">
-          <div class="title">
-            <h2>お問い合わせ</h2>
-          </div>
+      <section class="inquiry">
+        <div class="common__inner">
+          <div class="inquiry__wrap">
+            <div class="inquiry__title">
+              <h2 class="inquiry__heading level2-heading">お問い合わせ</h2>
+            </div>
+            <!-- /.inquiry__title -->
 
-          <form action="#" method="post">
-            <div class="name">
-              <label for="name">名前</label>
-              <input id="name" type="text" placeholder="山田　花子" required />
-            </div>
-            <div class="e-mail">
-              <label for="e-mail">メールアドレス</label>
-              <input
-                id="e-mail"
-                type="email"
-                placeholder="xxxxxxx@gmail.com"
-                required
-              />
-            </div>
-            <div class="tel">
-              <label for="tel">電話番号</label>
-              <input
-                id="tel"
-                type="tel"
-                maxlength="13"
-                placeholder="000-0000-0000"
-                pattern="\d{2,4}-\d{2,4}-\d{3,4}"
-                required
-              />
-            </div>
-            <div class="content">
-              <label for="content">お問い合わせ内容</label>
-              <textarea
-                id="content"
-                cols="80"
-                placeholder="テキストを入力してください"
-                required
-              ></textarea>
-            </div>
-            <div class="privacy">
-              <input
-                type="checkbox"
-                id="consent"
-                name="#"
-                value="同意"
-                required
-              />
-              <label for="consent">プライバシーポリシーに同意する</label>
-            </div>
-            <div class="send">
-              <input type="submit" value="送信する" />
-            </div>
-          </form>
+            <form class="inquiry__form" action="#" method="post">
+              <div class="inquiry__item">
+                <label class="inquiry__label" for="name">名前</label>
+                <input
+                  id="name"
+                  class="inquiry__input"
+                  type="text"
+                  placeholder="例：山田　花子"
+                  required
+                />
+              </div>
+              <!-- /.inquiry__item -->
+              <div class="inquiry__item">
+                <label class="inquiry__label" for="e-mail"
+                  >メールアドレス</label
+                >
+                <input
+                  id="e-mail"
+                  class="inquiry__input"
+                  type="email"
+                  placeholder="例：xxxxxxx@gmail.com"
+                  required
+                />
+              </div>
+              <!-- /.inquiry__item -->
+              <div class="inquiry__item">
+                <label class="inquiry__label" for="tel">電話番号</label>
+                <input
+                  id="tel"
+                  class="inquiry__input"
+                  type="tel"
+                  maxlength="13"
+                  placeholder="例：000-0000-0000"
+                  pattern="\d{2,4}-\d{2,4}-\d{3,4}"
+                  required
+                />
+              </div>
+              <!-- /.inquiry__item -->
+              <div class="inquiry__item">
+                <label class="inquiry__label" for="content"
+                  >お問い合わせ内容</label
+                >
+                <textarea
+                  id="content"
+                  class="inquiry__textarea"
+                  cols="80"
+                  placeholder="例：テキストを入力してください"
+                  required
+                ></textarea>
+              </div>
+              <!-- /.inquiry__item -->
+              <div class="inquiry__item consent__item">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  name="#"
+                  value="同意する"
+                  required
+                />
+                <label class="inquiry__label privacy__label" for="consent"
+                  >プライバシーポリシーに同意する</label
+                >
+              </div>
+              <!-- /.inquiry__item -->
+              <div class="inquiry__send">
+                <input type="submit" value="送信する" />
+              </div>
+              <!-- /.inquiry__send -->
+            </form>
+          </div>
+          <!-- /.inquiry__wrap -->
         </div>
+        <!-- /.common__inner -->
       </section>
     </main>
-
-    <!-- フッター -->
-    <footer id="footer">
-      <div class="menu">
-        <a href="#">
-          <h2 class="logo">ロゴ</h2>
+    <footer class="footer">
+      <div class="footer__inner">
+        <a class="footer__link-logo" href="#">
+          <!-- <h2 class="footer__title-logo">ロゴ</h2> -->
+          <h2 class="footer__title-logo">
+            <img src="./images/logo2.png" alt="ロゴ" class="footer__logo__img" width="140" height="55" decoding="async">
+          </h2>
         </a>
-
-        <nav>
-          <ul>
-            <li><a href="#">nav</a></li>
-            <li><a href="#">nav</a></li>
-            <li><a href="#">nav</a></li>
-            <li><a href="#">nav</a></li>
+        <nav class="footer__menu">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">会社概要</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="https://line.me/ja/"
+                >公式LINE</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">製品のご注文</a>
+            </li>
           </ul>
         </nav>
       </div>
-
+      <!-- /.footer__inner-->
       <p class="copyright">○○○ All Right Reserved.</p>
     </footer>
 
     <script src="./javascript/script.js"></script>
+    <script>
+      //スムーススクロール
+      document.addEventListener("DOMContentLoaded", () => {
+        const smoothScrollTrigger2 = document.querySelectorAll(
+          'a[href^="<?php echo home_url(' / '); ?>#"]'
+        );
+        const smoothScrollTrigger3 = "<?php echo home_url(" / "); ?>";
+
+        for (let i = 0; i < smoothScrollTrigger2.length; i++) {
+          smoothScrollTrigger2[i].addEventListener("click", (e) => {
+            e.preventDefault();
+
+            let href = smoothScrollTrigger2[i].getAttribute("href");
+            let targetElement;
+
+            // トップページの場合
+            if (document.body.classList.contains("home")) {
+              targetElement = document.getElementById(
+                href.replace(smoothScrollTrigger3 + "#", "")
+              );
+              if (targetElement) {
+                const rect = targetElement.getBoundingClientRect().top;
+                const offset = window.pageYOffset;
+                const gap = 60;
+                const target = rect + offset - gap;
+
+                console.log(targetElement);
+
+                window.scrollTo({
+                  top: target,
+                  behavior: "smooth",
+                });
+              } else {
+                console.log("Target element not found");
+              }
+            } else {
+              // 下層ページの場合、URLにターゲットIDを追加してトップページへリダイレクト
+              const targetID = href.replace(smoothScrollTrigger3 + "#", "");
+              window.location.href = `${smoothScrollTrigger3}?scrollTo=${targetID}`;
+            }
+          });
+        }
+
+        // トップページでURLのパラメータを解析してスクロール
+        const urlParams = new URLSearchParams(window.location.search);
+        const scrollTo = urlParams.get("scrollTo");
+        if (scrollTo) {
+          const targetElement = document.getElementById(scrollTo);
+          if (targetElement) {
+            const rect = targetElement.getBoundingClientRect().top;
+            const offset = window.pageYOffset;
+            const gap = 60;
+            const target = rect + offset - gap;
+
+            window.scrollTo({
+              top: target,
+              behavior: "smooth",
+            });
+          } else {
+            console.log("Target element not found");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
