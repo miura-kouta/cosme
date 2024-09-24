@@ -3,7 +3,6 @@
 :root {
   --color-white: #ffffff;
   --color-black: #333333;
-  --color-gray: #333333;
   --background-white: #ffffff;
   --background-blue: #6694bf;
   --background-darkBlue: #44515c;
@@ -28,7 +27,7 @@ body {
   font-family: Noto Serif JP, Meiryo, MS PGothic, Noto Sans JP, sans-serif;
   font-size: max(1.1vw, 14px);
   line-height: 1.5;
-  color: #333333;
+  color: var(--color-black);
   counter-reset: my-counter 0;
 }
 
@@ -71,6 +70,11 @@ img {
   margin-bottom: 2vw;
 }
 
+.level4-heading {
+  font-size: var(--font-size-extraThin);
+  margin-bottom: 1vw;
+}
+
 .common__inner {
   padding-top: 7vw;
   padding-bottom: 7vw;
@@ -103,13 +107,6 @@ img {
   line-height: 1;
 }
 
-@media screen and (max-width: 767px) {
-  #header {
-    padding-top: 1.9vw;
-    padding-bottom: 1.9vw;
-  }
-}
-
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -125,11 +122,11 @@ img {
   width: 5vw;
 }
 
-.header__list {
+.header-nav {
   display: flex;
 }
 
-.header__link {
+.header-nav__link {
   position: relative;
   margin-right: 2vw;
   font-weight: var(--font-weight-Medium);
@@ -137,13 +134,14 @@ img {
   transition: all 0.5s;
 }
 
-.header__item:last-child .header__link {
+.header-nav__item:last-child .header-nav__link {
   margin-right: 0;
 }
-.header__link:hover {
-  color: #333333;
+.header-nav__link:hover {
+  color: var(--color-black);
 }
 
+/* first-view */
 .first-view {
   position: relative;
 }
@@ -249,7 +247,7 @@ img {
   font-weight: var(--font-weight-SemiBold);
 }
 
-/* 悩み */
+/* worries */
 .worries {
   position: relative;
   width: 100%;
@@ -338,25 +336,25 @@ img {
   }
 }
 
-.worries__pic {
+.worries__thumb {
   display: flex;
 }
 
-.worries__pic img {
+.worries__thumb img {
   width: 4.5vw;
   padding-left: 0.8vw;
   padding-right: 0.8vw;
 }
 
 @media screen and (max-width: 767px) {
-  .worries__pic img {
+  .worries__thumb img {
     width: 12vw;
     padding-left: 2vw;
     padding-right: 2vw;
   }
 }
 
-.worries__pic:nth-of-type(1)::before {
+.worries__thumb:nth-of-type(1)::before {
   content: "";
   width: 15vw;
   height: 1.3vw;
@@ -364,7 +362,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .worries__pic:nth-of-type(1)::before {
+  .worries__thumb:nth-of-type(1)::before {
     width: 73vw;
     height: 3vw;
   }
@@ -386,7 +384,7 @@ img {
   }
 }
 
-.worries__pic:nth-child(3)::after {
+.worries__thumb:nth-child(3)::after {
   content: "";
   margin-top: 2.1vw;
   width: 15vw;
@@ -395,7 +393,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .worries__pic:nth-child(3)::after {
+  .worries__thumb:nth-child(3)::after {
     margin-top: 5vw;
     width: 73vw;
     height: 3vw;
@@ -413,38 +411,45 @@ img {
 }
 
 /* select */
-
 .select {
   position: relative;
   background-image: url(../images/ripples.png);
   width: 100%;
-  height: 90vw;
-  background-size: 100% 90vw;
-}
-
-@media screen and (max-width: 767px) {
-  .select {
-    background-size: cover;
-    height: 200vw;
-  }
+  height: 100%;
+  background-size: 100%;
 }
 
 .select__media {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+}
+
+.select__thumb-wrap {
+  width: 50%;
 }
 
 .select__thumb-lotion {
-  width: 30vw;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
-.select__box {
+.select__body {
+  width: 50%;
+}
+
+.select__wrap {
   display: flex;
-  align-items: center;
+  padding-top: 3vw;
+}
+
+.select__wrap:nth-child(1) {
+  padding-top: 0;
 }
 
 .select__counter {
   counter-increment: my-counter 1;
+  line-height: 1;
 }
 
 .select__counter::before {
@@ -457,13 +462,13 @@ img {
   background-clip: text;
 }
 
-/* 特徴 */
+/* feature */
 .feature {
   position: relative;
   background-image: url(../images/Rectangle.png);
   width: 100%;
-  height: 147vw;
-  background-size: 100% 147vw;
+  height: 100%;
+  background-size: 100%;
 }
 
 .feature__wrap {
@@ -523,9 +528,11 @@ img {
   font-size: var(--font-size-Thin);
 }
 
+/* application */
 .application {
   position: relative;
   width: 100%;
+  height: 100%;
   background-image: url(../images/blue-background.png);
   background-size: cover;
 }
@@ -610,16 +617,6 @@ img {
   font-size: var(--font-size-Light);
 }
 
-.application__text-tax {
-  font-size: var(--font-size-Light);
-  color: var(--color-black);
-
-  background: linear-gradient(#333333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 .application__btn {
   position: relative;
   z-index: 1;
@@ -667,9 +664,9 @@ img {
 }
 
 /* voice */
-
 .voice {
   width: 100%;
+  height: 100%;
   background-image: url(../images/voice-background.png);
   background-size: cover;
 }
@@ -712,6 +709,7 @@ img {
 }
 
 .voice__title {
+  padding-bottom: 2vw;
   border-bottom: 1px solid #000000;
 }
 
@@ -763,7 +761,7 @@ img {
   padding-left: 1vw;
   height: 3vw;
   font-size: var(--font-size-extraThin);
-  color: var(--color-gray);
+  color: var(--color-black);
   background: rgba(167, 235, 239, 0.57);
   border: none;
   border-radius: 5px;
@@ -784,7 +782,7 @@ img {
   padding-left: 1vw;
   background: rgba(167, 235, 239, 0.57);
   font-size: var(--font-size-extraThin);
-  color: var(--color-gray);
+  color: var(--color-black);
   border: none;
   border-radius: 5px;
 }
@@ -840,14 +838,19 @@ input[type="checkbox"]:checked:before {
 .inquiry .inquiry__send input {
   width: 20vw;
   height: 7vw;
-  font-weight: var(--font-weight-Medium);
-  font-size: var(--font-size-extraLight);
-  color: var(--color-white);
   background: #54a6b8;
   box-shadow: inset 0px 21px 10px rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  font-weight: var(--font-weight-Medium);
+  font-size: var(--font-size-extraLight);
+  color: var(--color-white);
+  transition: all 0.3s;
+}
+
+.inquiry .inquiry__send input:hover {
+  background-color: #007bff;
 }
 
 /* footer */
@@ -877,33 +880,32 @@ input[type="checkbox"]:checked:before {
   width: 5vw;
 }
 
-.footer__list {
+.footer-nav {
   display: flex;
 }
 
-.footer__list-item {
+.footer-nav__item {
   padding-right: 2vw;
   color: var(--color-white);
 }
 
-.footer__list-item:last-child {
+.footer-nav__item:last-child {
   padding-right: 0;
 }
 
-.footer__list-link {
+.footer-nav__link {
   font-weight: var(--font-weight-Medium);
   color: var(--color-white);
-
   transition: all 0.5s;
 }
 
-.footer__list-link:hover {
-  color: #333333;
+.footer-nav__link:hover {
+  color: var(--background-black);
 }
 
 .copyright {
   padding-top: 4vw;
   padding-bottom: 2vw;
-  text-align: center;
   color: var(--color-white);
+  text-align: center;
 }
