@@ -61,6 +61,7 @@ img {
   width: 100%;
   height: auto;
   vertical-align: top;
+
 }
 
 .level2-heading {
@@ -681,7 +682,15 @@ img {
   width: 30%;
   height: auto;
   z-index: 1;
+
 }
+
+.feature__media .feature__thumb img {
+ aspect-ratio: 2/4; 
+
+}
+
+
 
 @media screen and (max-width: 767px) {
   .feature__media .feature__thumb {
