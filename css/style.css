@@ -1172,16 +1172,17 @@ input[type="checkbox"]:checked:before {
 }
 
 .inquiry__send {
-  padding-top: 7vw;
   display: flex;
   justify-content: center;
+  padding-top: 7vw;
 }
 
 .inquiry .inquiry__send input {
   width: 20vw;
   height: 7vw;
   background: #54a6b8;
-  box-shadow: inset 0px 21px 10px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 9px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 21px 10px rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -1220,12 +1221,8 @@ input[type="checkbox"]:checked:before {
   }
 }
 
-.footer__link-logo {
-  font-size: var(--font-size-extraLight);
-}
-
 .footer__title-logo {
-  width: 5vw;
+  width: max(5vw, 34px);
 }
 
 .footer-nav {
